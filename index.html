@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        padding: 0px;
+        margin: 0px;
+        color: #4b5157;
+        box-sizing: border-box;
+      }
+      #sub {
+        padding-left: 60px;
+        /* min-height: 20px; */
+        text-align: center;
+        padding: 30px 0px 30px 60px;
+      }
+      section {
+        width: 80vw;
+        min-height: 80vh;
+        margin: 0px auto;
+      }
+      header {
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+        width: 100%;
+      }
+      header > .west {
+        /* border: 1px solid black; */
+        width: 80%;
+        font-size: 30px;
+        font-weight: bold;
+        /* color: black; */
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        padding-left: 30px;
+      }
+      header > .east {
+        display: flex;
+        align-items: end;
+        justify-content: start;
+      }
+
+      article {
+        margin-top: 30px;
+        width: 80vw;
+        /* border: 1px solid black; */
+      }
+      article > aside {
+        /* border: 1px solid green; */
+        margin: 20px 10px;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+      }
+      aside:hover {
+        background-color: #f5f9fc;
+      }
+      div > img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+      }
+      button {
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: red;
+        border: none;
+      }
+      span {
+        font-weight: bolder;
+        color: black;
+      }
+
+      span:hover {
+        color: #06307d;
+      }
+      section > header > aside > div > button {
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        background-color: #06307d;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <aside class="west">
+          <div>Notifications <button>3</button></div>
+        </aside>
+        <aside class="east"><span>Mark all as read</span></aside>
+      </header>
+      <article>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="" />
+          </div>
+          <div class="right">
+            <span>Mark Webber </span>reacted to your recent post
+            <span>My first tournament today!</span> <button></button> <br />1m
+            ago
+          </div>
+        </aside>
+
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="" />
+          </div>
+          <div class="right">
+            <span>Angela Gray followed</span>
+            you <button></button> <br />
+            5m ago
+          </div>
+        </aside>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+          </div>
+          <div class="right">
+            <span>Jacob Thompson</span> has joined your group
+            <span>Chess Club</span> <br />1 day ago
+          </div>
+        </aside>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          </div>
+          <div class="right">
+            <span> Rizky Hasanuddin</span> sent you a private message <br />
+            5 days ago
+          </div>
+        </aside>
+        <aside>
+          <div class="right" id="sub">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </aside>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+          </div>
+          <div class="right">
+            <span>Kimberly Smith </span>commented on your picture <br />1 week
+            ago
+          </div>
+        </aside>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+          </div>
+          <div class="right">
+            <span>Nathan Peterson</span> reacted to your recent post 5 end-game
+            strategies to increase your win rate <br />2 weeks ago
+          </div>
+        </aside>
+        <aside>
+          <div class="left">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="" />
+          </div>
+          <div class="right">
+            <span> Anna Kim</span> left the group Chess Club <br />2 weeks ago
+          </div>
+        </aside>
+      </article>
+    </section>
+    <img src="./design/desktop-design.jpg" alt="" />
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
